@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ChevronRight, Gamepad2, Search, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, Bell, ChevronRight, Gamepad2, Search, ShoppingCart } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -21,12 +21,19 @@ export default function Header() {
           <Link href="/" className="hover:text-white">Akun</Link>
           <Link href="/" className="hover:text-white">Item</Link>
           <Link href="/dashboard" className="hover:text-white">Penjual</Link>
+          <Link href="/chat" className="hover:text-white">Chat</Link>
         </nav>
 
         <div className="flex items-center gap-3">
           <button className="hidden items-center gap-2 rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-200 md:flex">
             <Search size={16} /> Cari game
           </button>
+          <Link href="/chat" className="rounded-xl border border-slate-700 bg-slate-900 p-2.5 text-slate-200">
+            <Bell size={18} />
+          </Link>
+          <Link href="/cart" className="rounded-xl border border-slate-700 bg-slate-900 p-2.5 text-slate-200">
+            <ShoppingCart size={18} />
+          </Link>
           <Link href="/login" className="rounded-xl bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-500">Masuk</Link>
         </div>
       </div>

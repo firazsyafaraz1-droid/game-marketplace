@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, Mail, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Mail, ShieldCheck } from 'lucide-react';
 
 export default function LoginPage() {
   return (
@@ -26,7 +26,7 @@ export default function LoginPage() {
         <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-glow">
           <div className="mb-6 flex gap-2 rounded-2xl bg-slate-950 p-1">
             <button className="flex-1 rounded-xl bg-violet-600 px-4 py-2.5 font-semibold text-white">Masuk</button>
-            <button className="flex-1 rounded-xl px-4 py-2.5 font-semibold text-slate-300">Daftar</button>
+            <Link href="/register" className="flex flex-1 items-center justify-center rounded-xl px-4 py-2.5 font-semibold text-slate-300">Daftar</Link>
           </div>
 
           <form className="space-y-4">
